@@ -19,7 +19,7 @@ int	ft_putstrlen_fd(char *s, int fd)
 	i = 0;
 	if (!s)
 	{
-		write(fd, "(null)", 6);
+		write(fd, NULL_STR, 6);
 		return (6);
 	}
 	while (s[i] != '\0')
@@ -82,7 +82,7 @@ int	ft_putptr_fd(unsigned long n, int fd, const char *hex_digits)
 {
 	if (!n)
 	{
-		write(fd, "(nil)", 5);
+		write(fd, NIL_STR, 5);
 		return (5);
 	}
 	write(fd, "0x", 2);

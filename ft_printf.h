@@ -15,6 +15,11 @@
 # include "libft/libft.h"
 # include <stdarg.h>
 
+# define HEX_LOWER "0123456789abcdef"
+# define HEX_UPPER "0123456789ABCDEF"
+# define NULL_STR "(null)"
+# define NIL_STR "(nil)"
+
 int	ft_putstrlen_fd(char *s, int fd);
 int	ft_putnbrlen_fd(int n, int fd);
 int	ft_putuintlen_fd(unsigned int n, int fd);

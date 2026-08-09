@@ -21,17 +21,17 @@ static int	conversion_specifiers(char specifier, va_list list)
 		return (ft_putstrlen_fd(va_arg(list, char *), 1));
 	if (specifier == 'p')
 		return (ft_putptr_fd((unsigned long)va_arg(list, void *), 1,
-				"0123456789abcdef"));
+				HEX_LOWER));
 	if (specifier == 'd' || specifier == 'i')
 		return (ft_putnbrlen_fd(va_arg(list, int), 1));
 	if (specifier == 'u')
 		return (ft_putuintlen_fd(va_arg(list, unsigned int), 1));
 	if (specifier == 'x')
 		return (ft_puthexlen_fd((unsigned long)(va_arg(list, unsigned int)), 1,
-			"0123456789abcdef"));
+			HEX_LOWER));
 	if (specifier == 'X')
 		return (ft_puthexlen_fd((unsigned long)(va_arg(list, unsigned int)), 1,
-			"0123456789ABCDEF"));
+			HEX_UPPER));
 	if (specifier == '%')
 		return (ft_putchar_fd('%', 1), 1);
 	return (0);
