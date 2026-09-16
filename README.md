@@ -1,6 +1,6 @@
-# ft_printf
-
 *This project has been made as part of the 42 curriculum by wczarnom.*
+
+# ft_printf
 
 ## Description
 
@@ -8,7 +8,7 @@
 
 The mandatory part implements the following conversions:
 
-| Conversion | Description |
+| Conversion | Description |# ft_printf
 |---|---|
 | `%c` | Single character |
 | `%s` | String |
@@ -20,6 +20,20 @@ The mandatory part implements the following conversions:
 | `%%` | Literal `%` |
 
 `ft_printf` does not manage output buffering itself (each character is written directly via `write`), and it returns the total number of characters printed, matching the original `printf()`'s return value.
+
+## Project structure
+
+This project implements the `ft_printf` function alongside supporting helper functions, leveraging the custom `libft` library.
+
+```
+ft_printf/
+├── Makefile
+├── README.md
+├── ft_printf.c
+├── ft_printf.h
+├── ft_printf_utils.c
+└── libft
+```
 
 ## Instructions
 
